@@ -48,7 +48,7 @@ const Index = () => {
               Discord боты нового поколения
             </Badge>
             
-            <h1 className="text-5xl md:text-7xl font-black text-neon">
+            <h1 className="text-5xl md:text-7xl font-black">
               <span className="text-primary">МОЩНЫЕ</span>
               <br />
               <span className="text-secondary">DISCORD БОТЫ</span>
@@ -79,7 +79,7 @@ const Index = () => {
 
         <section className="container mx-auto px-4 py-20">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-neon">
+            <h2 className="text-4xl md:text-5xl font-bold">
               <span className="text-primary">ВЫБЕРИТЕ</span>{' '}
               <span className="text-secondary">РЕШЕНИЕ</span>
             </h2>
@@ -104,7 +104,7 @@ const Index = () => {
                       {bot.id === 3 ? 'Под заказ' : 'Готово'}
                     </Badge>
                   </div>
-                  <CardTitle className="text-2xl text-neon">{bot.name}</CardTitle>
+                  <CardTitle className="text-2xl">{bot.name}</CardTitle>
                   <CardDescription className="text-muted-foreground">
                     {bot.description}
                   </CardDescription>
@@ -137,7 +137,7 @@ const Index = () => {
         <section className="container mx-auto px-4 py-20">
           <Card className="border-accent/30 bg-gradient-to-br from-card/80 to-accent/10 backdrop-blur-sm glow-purple">
             <CardHeader className="text-center">
-              <CardTitle className="text-4xl md:text-5xl font-bold text-neon">
+              <CardTitle className="text-4xl md:text-5xl font-bold">
                 <span className="text-accent">НУЖНО ЧТО-ТО УНИКАЛЬНОЕ?</span>
               </CardTitle>
               <CardDescription className="text-lg text-muted-foreground mt-4">

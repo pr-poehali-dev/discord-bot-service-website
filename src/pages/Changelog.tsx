@@ -107,7 +107,7 @@ const Changelog = () => {
               <Icon name="FileText" className="mr-2 h-4 w-4 inline" />
               Обновления продукта
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-black text-neon">
+            <h1 className="text-5xl md:text-6xl font-black">
               <span className="text-primary">СПИСОК</span>
               <span className="text-secondary">ИЗМЕНЕНИЙ</span>
             </h1>
@@ -130,7 +130,7 @@ const Changelog = () => {
                         <Icon name="Package" className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <CardTitle className="text-2xl text-neon">Версия {update.version}</CardTitle>
+                        <CardTitle className="text-2xl">Версия {update.version}</CardTitle>
                         <p className="text-sm text-muted-foreground mt-1">{update.date}</p>
                       </div>
                     </div>
@@ -157,7 +157,7 @@ const Changelog = () => {
 
           <Card className="border-accent/30 bg-gradient-to-br from-card/80 to-accent/10 backdrop-blur-sm glow-purple mt-12">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl text-neon text-accent">Будьте в курсе</CardTitle>
+              <CardTitle className="text-2xl text-accent">Будьте в курсе</CardTitle>
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <p className="text-muted-foreground">

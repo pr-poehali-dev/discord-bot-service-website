@@ -23,7 +23,7 @@ const Header = () => {
               <Icon name="Bot" className="h-8 w-8 text-primary group-hover:animate-glitch" />
               <div className="absolute inset-0 bg-primary/20 blur-xl group-hover:bg-primary/40 transition-all" />
             </div>
-            <span className="text-2xl font-bold text-neon text-primary">NEXUS</span>
+            <span className="text-2xl font-bold text-primary">NEXUS</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-1">

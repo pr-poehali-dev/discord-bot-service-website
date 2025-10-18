@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Icon name="Bot" className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-neon text-primary">NEXUS</span>
+              <span className="text-2xl font-bold text-primary">NEXUS</span>
             </div>
             <p className="text-muted-foreground text-sm">
               Мощные Discord боты для вашего сообщества. Аренда или кастомная разработка под ваши задачи.

@@ -48,7 +48,7 @@ const Bots = () => {
               <Icon name="Bot" className="mr-2 h-4 w-4 inline" />
               Каталог ботов
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-black text-neon">
+            <h1 className="text-5xl md:text-6xl font-black">
               <span className="text-primary">НАШИ</span>{' '}
               <span className="text-secondary">РЕШЕНИЯ</span>
             </h1>
@@ -78,7 +78,7 @@ const Bots = () => {
                       <Icon name="Users" className="h-12 w-12 text-primary" />
                     </div>
                     <div>
-                      <CardTitle className="text-3xl text-neon text-primary">Бот для семейного сообщества</CardTitle>
+                      <CardTitle className="text-3xl text-primary">Бот для семейного сообщества</CardTitle>
                       <CardDescription className="text-lg mt-2">Комплексное решение для управления вашим Discord сообществом</CardDescription>
                     </div>
                   </div>
@@ -113,7 +113,7 @@ const Bots = () => {
                       <Icon name="Trophy" className="h-12 w-12 text-secondary" />
                     </div>
                     <div>
-                      <CardTitle className="text-3xl text-neon text-secondary">Бот для турнирной регистрации</CardTitle>
+                      <CardTitle className="text-3xl text-secondary">Бот для турнирной регистрации</CardTitle>
                       <CardDescription className="text-lg mt-2">Автоматизация регистрации и управления турнирами</CardDescription>
                     </div>
                   </div>
@@ -148,7 +148,7 @@ const Bots = () => {
                       <Icon name="Sparkles" className="h-12 w-12 text-accent" />
                     </div>
                     <div>
-                      <CardTitle className="text-3xl text-neon text-accent">Кастомное решение</CardTitle>
+                      <CardTitle className="text-3xl text-accent">Кастомное решение</CardTitle>
                       <CardDescription className="text-lg mt-2">Индивидуальный Discord бот, созданный точно под ваши требования</CardDescription>
                     </div>
                   </div>

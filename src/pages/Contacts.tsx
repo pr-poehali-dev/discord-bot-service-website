@@ -21,7 +21,7 @@ const Contacts = () => {
               <Icon name="MessageSquare" className="mr-2 h-4 w-4 inline" />
               Свяжитесь с нами
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-black text-neon">
+            <h1 className="text-5xl md:text-6xl font-black">
               <span className="text-primary">НАШИ</span>{' '}
               <span className="text-secondary">КОНТАКТЫ</span>
             </h1>
@@ -33,7 +33,7 @@ const Contacts = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-primary/30 bg-card/80 backdrop-blur-sm glow-cyan">
               <CardHeader>
-                <CardTitle className="text-2xl text-neon text-primary">Отправить сообщение</CardTitle>
+                <CardTitle className="text-2xl text-primary">Отправить сообщение</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
@@ -66,7 +66,7 @@ const Contacts = () => {
             <div className="space-y-6">
               <Card className="border-secondary/30 bg-card/80 backdrop-blur-sm glow-magenta">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-neon text-secondary">Discord сообщество</CardTitle>
+                  <CardTitle className="text-2xl text-secondary">Discord сообщество</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
@@ -81,7 +81,7 @@ const Contacts = () => {
 
               <Card className="border-accent/30 bg-card/80 backdrop-blur-sm glow-purple">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-neon text-accent">Прямой контакт</CardTitle>
+                  <CardTitle className="text-2xl text-accent">Прямой контакт</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start space-x-3">
@@ -110,7 +110,7 @@ const Contacts = () => {
 
               <Card className="border-primary/30 bg-card/80 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-xl text-neon">FAQ</CardTitle>
+                  <CardTitle className="text-xl">FAQ</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3 text-sm">
                   <div>
