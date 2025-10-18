@@ -12,22 +12,22 @@ const Footer = () => {
               <span className="text-2xl font-bold text-neon text-primary">NEXUS</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Powerful Discord bots for your community. Rent or develop custom solutions tailored to your needs.
+              Мощные Discord боты для вашего сообщества. Аренда или кастомная разработка под ваши задачи.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-primary">Navigation</h3>
+            <h3 className="text-lg font-semibold text-primary">Навигация</h3>
             <nav className="flex flex-col space-y-2">
-              <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">Home</Link>
-              <Link to="/bots" className="text-muted-foreground hover:text-primary transition-colors">Bots</Link>
-              <Link to="/changelog" className="text-muted-foreground hover:text-primary transition-colors">Changelog</Link>
-              <Link to="/contacts" className="text-muted-foreground hover:text-primary transition-colors">Contacts</Link>
+              <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">Главная</Link>
+              <Link to="/bots" className="text-muted-foreground hover:text-primary transition-colors">Боты</Link>
+              <Link to="/changelog" className="text-muted-foreground hover:text-primary transition-colors">Обновления</Link>
+              <Link to="/contacts" className="text-muted-foreground hover:text-primary transition-colors">Контакты</Link>
             </nav>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-secondary">Connect</h3>
+            <h3 className="text-lg font-semibold text-secondary">Связь</h3>
             <div className="flex space-x-4">
               <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors">
                 <Icon name="MessageCircle" className="h-6 w-6" />
@@ -44,7 +44,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-primary/10">
           <p className="text-center text-muted-foreground text-sm">
-            © 2025 NEXUS Bot Service. All rights reserved.
+            © 2025 NEXUS Bot Service. Все права защищены.
           </p>
         </div>
       </div>

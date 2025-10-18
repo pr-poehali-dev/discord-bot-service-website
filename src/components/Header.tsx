@@ -8,10 +8,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Bots', path: '/bots' },
-    { name: 'Changelog', path: '/changelog' },
-    { name: 'Contacts', path: '/contacts' },
+    { name: 'Главная', path: '/' },
+    { name: 'Боты', path: '/bots' },
+    { name: 'Обновления', path: '/changelog' },
+    { name: 'Контакты', path: '/contacts' },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Header = () => {
             <Link to="/dashboard">
               <Button className="ml-4 glow-cyan bg-primary hover:bg-primary/80 text-primary-foreground font-semibold">
                 <Icon name="UserCircle" className="mr-2 h-4 w-4" />
-                Dashboard
+                Кабинет
               </Button>
             </Link>
           </nav>
@@ -60,7 +60,7 @@ const Header = () => {
                 <Link to="/dashboard" onClick={() => setIsOpen(false)}>
                   <Button className="w-full glow-cyan bg-primary hover:bg-primary/80 text-primary-foreground">
                     <Icon name="UserCircle" className="mr-2 h-4 w-4" />
-                    Dashboard
+                    Кабинет
                   </Button>
                 </Link>
               </nav>

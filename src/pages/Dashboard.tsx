@@ -11,7 +11,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const Dashboard = () => {
-  const [isLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   if (!isLoggedIn) {
     return (
@@ -28,25 +28,24 @@ const Dashboard = () => {
                     <Icon name="UserCircle" className="h-12 w-12 text-primary" />
                   </div>
                 </div>
-                <CardTitle className="text-3xl text-neon text-primary">SIGN IN</CardTitle>
-                <CardDescription>Access your dashboard and manage your bots</CardDescription>
+                <CardTitle className="text-3xl text-neon text-primary">ВХОД</CardTitle>
+                <CardDescription>Войдите в личный кабинет для управления ботами</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" className="bg-background/50 border-primary/30" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
-                  <Input id="password" type="password" placeholder="••••••••" className="bg-background/50 border-primary/30" />
-                </div>
-                <Button className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-bold glow-cyan">
+                <Button 
+                  onClick={() => setIsLoggedIn(true)}
+                  className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-bold glow-cyan"
+                >
                   <Icon name="LogIn" className="mr-2 h-4 w-4" />
-                  Sign In
+                  Войти
                 </Button>
                 <div className="text-center">
-                  <Button variant="link" className="text-muted-foreground hover:text-primary">
-                    Don't have an account? Register
+                  <Button 
+                    variant="link" 
+                    onClick={() => setIsLoggedIn(true)}
+                    className="text-muted-foreground hover:text-primary"
+                  >
+                    Нет аккаунта? Зарегистрироваться
                   </Button>
                 </div>
               </CardContent>
@@ -67,24 +66,24 @@ const Dashboard = () => {
         <div className="container mx-auto px-4">
           <div className="mb-8 space-y-2">
             <h1 className="text-4xl md:text-5xl font-black text-neon">
-              <span className="text-primary">DASHBOARD</span>
+              <span className="text-primary">КАБИНЕТ</span>
             </h1>
-            <p className="text-muted-foreground text-lg">Manage your bots and subscriptions</p>
+            <p className="text-muted-foreground text-lg">Управление ботами и подписками</p>
           </div>
 
           <Tabs defaultValue="overview" className="space-y-6">
             <TabsList className="grid w-full max-w-3xl grid-cols-4 bg-card/50 border border-primary/20">
-              <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="subscriptions">Subscriptions</TabsTrigger>
-              <TabsTrigger value="settings">Settings</TabsTrigger>
-              <TabsTrigger value="billing">Billing</TabsTrigger>
+              <TabsTrigger value="overview">Обзор</TabsTrigger>
+              <TabsTrigger value="subscriptions">Подписки</TabsTrigger>
+              <TabsTrigger value="settings">Настройки</TabsTrigger>
+              <TabsTrigger value="billing">Оплата</TabsTrigger>
             </TabsList>
 
             <TabsContent value="overview" className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card className="border-primary/30 bg-card/80 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-sm font-medium text-muted-foreground">Active Bots</CardTitle>
+                    <CardTitle className="text-sm font-medium text-muted-foreground">Активные боты</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-3xl font-bold text-primary">0</div>
@@ -92,7 +91,7 @@ const Dashboard = () => {
                 </Card>
                 <Card className="border-secondary/30 bg-card/80 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-sm font-medium text-muted-foreground">Total Servers</CardTitle>
+                    <CardTitle className="text-sm font-medium text-muted-foreground">Всего серверов</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-3xl font-bold text-secondary">0</div>
@@ -100,7 +99,7 @@ const Dashboard = () => {
                 </Card>
                 <Card className="border-accent/30 bg-card/80 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-sm font-medium text-muted-foreground">Balance</CardTitle>
+                    <CardTitle className="text-sm font-medium text-muted-foreground">Баланс</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-3xl font-bold text-accent">$0.00</div>
@@ -110,24 +109,24 @@ const Dashboard = () => {
 
               <Card className="border-primary/30 bg-card/80 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-neon">Quick Actions</CardTitle>
+                  <CardTitle className="text-neon">Быстрые действия</CardTitle>
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <Button className="bg-primary hover:bg-primary/80 text-primary-foreground">
                     <Icon name="Plus" className="mr-2 h-4 w-4" />
-                    Add Bot
+                    Добавить бота
                   </Button>
                   <Button className="bg-secondary hover:bg-secondary/80 text-secondary-foreground">
                     <Icon name="Settings" className="mr-2 h-4 w-4" />
-                    Configure
+                    Настроить
                   </Button>
                   <Button className="bg-accent hover:bg-accent/80 text-accent-foreground">
                     <Icon name="DollarSign" className="mr-2 h-4 w-4" />
-                    Top Up
+                    Пополнить
                   </Button>
                   <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
                     <Icon name="HelpCircle" className="mr-2 h-4 w-4" />
-                    Support
+                    Поддержка
                   </Button>
                 </CardContent>
               </Card>
@@ -136,16 +135,16 @@ const Dashboard = () => {
             <TabsContent value="subscriptions" className="space-y-6">
               <Card className="border-primary/30 bg-card/80 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-neon">Active Subscriptions</CardTitle>
-                  <CardDescription>No active subscriptions yet</CardDescription>
+                  <CardTitle className="text-neon">Активные подписки</CardTitle>
+                  <CardDescription>Пока нет активных подписок</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="text-center py-12">
                     <Icon name="Package" className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground mb-4">You don't have any active bot subscriptions</p>
+                    <p className="text-muted-foreground mb-4">У вас пока нет активных подписок на ботов</p>
                     <Button className="bg-primary hover:bg-primary/80 text-primary-foreground glow-cyan">
                       <Icon name="ShoppingCart" className="mr-2 h-4 w-4" />
-                      Browse Bots
+                      Выбрать бота
                     </Button>
                   </div>
                 </CardContent>
@@ -155,12 +154,12 @@ const Dashboard = () => {
             <TabsContent value="settings" className="space-y-6">
               <Card className="border-primary/30 bg-card/80 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-neon">Account Settings</CardTitle>
+                  <CardTitle className="text-neon">Настройки аккаунта</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="username">Username</Label>
-                    <Input id="username" placeholder="YourUsername" className="bg-background/50 border-primary/30" />
+                    <Label htmlFor="username">Имя пользователя</Label>
+                    <Input id="username" placeholder="Ваш никнейм" className="bg-background/50 border-primary/30" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email-settings">Email</Label>
@@ -171,27 +170,27 @@ const Dashboard = () => {
 
               <Card className="border-secondary/30 bg-card/80 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-neon">Notification Settings</CardTitle>
+                  <CardTitle className="text-neon">Настройки уведомлений</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
-                      <Label>Subscription Expiry Alerts</Label>
-                      <p className="text-sm text-muted-foreground">Get notified before your subscription ends</p>
+                      <Label>Окончание подписки</Label>
+                      <p className="text-sm text-muted-foreground">Получать уведомления до истечения подписки</p>
                     </div>
                     <Switch />
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
-                      <Label>Feature Updates</Label>
-                      <p className="text-sm text-muted-foreground">Receive updates about new features</p>
+                      <Label>Новые функции</Label>
+                      <p className="text-sm text-muted-foreground">Получать обновления о новых возможностях</p>
                     </div>
                     <Switch />
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
-                      <Label>Product Announcements</Label>
-                      <p className="text-sm text-muted-foreground">Be the first to know about new bots</p>
+                      <Label>Новые продукты</Label>
+                      <p className="text-sm text-muted-foreground">Узнавайте первыми о новых ботах</p>
                     </div>
                     <Switch />
                   </div>
@@ -203,25 +202,25 @@ const Dashboard = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Card className="border-accent/30 bg-card/80 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-neon">Current Balance</CardTitle>
+                    <CardTitle className="text-neon">Текущий баланс</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <div className="text-4xl font-bold text-accent">$0.00</div>
+                    <div className="text-4xl font-bold text-accent">0 ₽</div>
                     <Button className="w-full bg-accent hover:bg-accent/80 text-accent-foreground glow-purple">
                       <Icon name="Plus" className="mr-2 h-4 w-4" />
-                      Top Up Balance
+                      Пополнить баланс
                     </Button>
                   </CardContent>
                 </Card>
 
                 <Card className="border-primary/30 bg-card/80 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-neon">Payment History</CardTitle>
+                    <CardTitle className="text-neon">История платежей</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-center py-8">
                       <Icon name="Receipt" className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
-                      <p className="text-sm text-muted-foreground">No payment history yet</p>
+                      <p className="text-sm text-muted-foreground">Пока нет истории платежей</p>
                     </div>
                   </CardContent>
                 </Card>

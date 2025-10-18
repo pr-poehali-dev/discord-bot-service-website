@@ -19,46 +19,46 @@ const Contacts = () => {
           <div className="text-center mb-16 space-y-4 animate-slide-up">
             <Badge className="bg-primary/20 text-primary border-primary/50 glow-cyan text-lg px-4 py-2">
               <Icon name="MessageSquare" className="mr-2 h-4 w-4 inline" />
-              Get In Touch
+              Свяжитесь с нами
             </Badge>
             <h1 className="text-5xl md:text-6xl font-black text-neon">
-              <span className="text-primary">CONTACT</span>{' '}
-              <span className="text-secondary">US</span>
+              <span className="text-primary">НАШИ</span>{' '}
+              <span className="text-secondary">КОНТАКТЫ</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Have questions? We'd love to hear from you
+              Есть вопросы? Мы будем рады услышать вас
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-primary/30 bg-card/80 backdrop-blur-sm glow-cyan">
               <CardHeader>
-                <CardTitle className="text-2xl text-neon text-primary">Send a Message</CardTitle>
+                <CardTitle className="text-2xl text-neon text-primary">Отправить сообщение</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Your name" className="bg-background/50 border-primary/30" />
+                  <Label htmlFor="name">Имя</Label>
+                  <Input id="name" placeholder="Ваше имя" className="bg-background/50 border-primary/30" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
                   <Input id="email" type="email" placeholder="your@email.com" className="bg-background/50 border-primary/30" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="What's this about?" className="bg-background/50 border-primary/30" />
+                  <Label htmlFor="subject">Тема</Label>
+                  <Input id="subject" placeholder="О чем речь?" className="bg-background/50 border-primary/30" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Сообщение</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Tell us more..." 
+                    placeholder="Расскажите подробнее..." 
                     className="bg-background/50 border-primary/30 min-h-[120px]"
                   />
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-bold glow-cyan">
                   <Icon name="Send" className="mr-2 h-4 w-4" />
-                  Send Message
+                  Отправить сообщение
                 </Button>
               </CardContent>
             </Card>
@@ -66,22 +66,22 @@ const Contacts = () => {
             <div className="space-y-6">
               <Card className="border-secondary/30 bg-card/80 backdrop-blur-sm glow-magenta">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-neon text-secondary">Discord Community</CardTitle>
+                  <CardTitle className="text-2xl text-neon text-secondary">Discord сообщество</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
-                    Join our Discord server for instant support, feature requests, and community discussions.
+                    Присоединяйтесь к нашему Discord серверу для мгновенной поддержки, запросов функций и обсуждений сообщества.
                   </p>
                   <Button className="w-full bg-secondary hover:bg-secondary/80 text-secondary-foreground font-bold glow-magenta">
                     <Icon name="MessageCircle" className="mr-2 h-5 w-5" />
-                    Join Discord Server
+                    Присоединиться к Discord серверу
                   </Button>
                 </CardContent>
               </Card>
 
               <Card className="border-accent/30 bg-card/80 backdrop-blur-sm glow-purple">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-neon text-accent">Direct Contact</CardTitle>
+                  <CardTitle className="text-2xl text-neon text-accent">Прямой контакт</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start space-x-3">
@@ -94,15 +94,15 @@ const Contacts = () => {
                   <div className="flex items-start space-x-3">
                     <Icon name="Clock" className="h-5 w-5 text-accent mt-0.5" />
                     <div>
-                      <p className="font-medium">Response Time</p>
-                      <p className="text-sm text-muted-foreground">Usually within 24 hours</p>
+                      <p className="font-medium">Время ответа</p>
+                      <p className="text-sm text-muted-foreground">Обычно в течение 24 часов</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Icon name="Globe" className="h-5 w-5 text-accent mt-0.5" />
                     <div>
-                      <p className="font-medium">Support Hours</p>
-                      <p className="text-sm text-muted-foreground">24/7 for premium users</p>
+                      <p className="font-medium">Часы поддержки</p>
+                      <p className="text-sm text-muted-foreground">24/7 для премиум пользователей</p>
                     </div>
                   </div>
                 </CardContent>
@@ -114,16 +114,16 @@ const Contacts = () => {
                 </CardHeader>
                 <CardContent className="space-y-3 text-sm">
                   <div>
-                    <p className="font-medium text-primary">How fast is bot deployment?</p>
-                    <p className="text-muted-foreground">Instant for ready-made bots, 2-7 days for custom bots</p>
+                    <p className="font-medium text-primary">Как быстро происходит развертывание бота?</p>
+                    <p className="text-muted-foreground">Мгновенно для готовых ботов, 2-7 дней для кастомных ботов</p>
                   </div>
                   <div>
-                    <p className="font-medium text-secondary">Can I cancel anytime?</p>
-                    <p className="text-muted-foreground">Yes, no long-term commitments required</p>
+                    <p className="font-medium text-secondary">Могу ли я отменить в любое время?</p>
+                    <p className="text-muted-foreground">Да, долгосрочные обязательства не требуются</p>
                   </div>
                   <div>
-                    <p className="font-medium text-accent">Do you offer refunds?</p>
-                    <p className="text-muted-foreground">30-day money-back guarantee for all services</p>
+                    <p className="font-medium text-accent">Вы предлагаете возврат средств?</p>
+                    <p className="text-muted-foreground">30-дневная гарантия возврата денег для всех услуг</p>
                   </div>
                 </CardContent>
               </Card>

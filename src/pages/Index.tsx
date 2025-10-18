@@ -10,25 +10,25 @@ const Index = () => {
   const bots = [
     {
       id: 1,
-      name: 'Family Community Bot',
-      description: 'Complete community management solution',
-      features: ['Member Lists', 'Point System', 'Shop Integration', 'Application Processing', 'Thread Management'],
+      name: 'Семейный бот',
+      description: 'Полное решение для управления сообществом',
+      features: ['Списки участников', 'Система баллов', 'Магазин', 'Обработка заявок', 'Управление ветками'],
       icon: 'Users',
       color: 'primary',
     },
     {
       id: 2,
-      name: 'Tournament Registration Bot',
-      description: 'Automate tournament registration',
-      features: ['MCL Support', 'VZM Integration', 'Pack Management', 'Auto Registration', 'Schedule System'],
+      name: 'Турнирный бот',
+      description: 'Автоматизация регистрации на турниры',
+      features: ['Поддержка MCL', 'Интеграция VZM', 'Управление паками', 'Авто-регистрация', 'Система расписания'],
       icon: 'Trophy',
       color: 'secondary',
     },
     {
       id: 3,
-      name: 'Custom Bot Solution',
-      description: 'Tailored to your specific needs',
-      features: ['Custom Features', 'Full Integration', 'Premium Support', 'Scalable Architecture', 'Regular Updates'],
+      name: 'Кастомный бот',
+      description: 'Разработка под ваши задачи',
+      features: ['Любые функции', 'Полная интеграция', 'Премиум поддержка', 'Масштабируемость', 'Регулярные обновления'],
       icon: 'Sparkles',
       color: 'accent',
     },
@@ -45,32 +45,32 @@ const Index = () => {
           <div className="text-center space-y-8 animate-slide-up">
             <Badge className="bg-primary/20 text-primary border-primary/50 glow-cyan text-lg px-4 py-2">
               <Icon name="Zap" className="mr-2 h-4 w-4 inline" />
-              Next-Gen Discord Bots
+              Discord боты нового поколения
             </Badge>
             
             <h1 className="text-5xl md:text-7xl font-black text-neon">
-              <span className="text-primary">POWERFUL</span>
+              <span className="text-primary">МОЩНЫЕ</span>
               <br />
-              <span className="text-secondary">DISCORD BOTS</span>
+              <span className="text-secondary">DISCORD БОТЫ</span>
               <br />
-              <span className="text-accent">FOR YOUR COMMUNITY</span>
+              <span className="text-accent">ДЛЯ ВАШЕГО СЕРВЕРА</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light">
-              Rent ready-made solutions or develop custom Discord bots tailored to your server's unique needs
+              Арендуйте готовые решения или закажите кастомного Discord бота под ваши уникальные задачи
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
               <Link to="/bots">
                 <Button size="lg" className="glow-cyan bg-primary hover:bg-primary/80 text-primary-foreground font-bold text-lg px-8 py-6 group">
                   <Icon name="Rocket" className="mr-2 h-5 w-5 group-hover:animate-pulse-glow" />
-                  Explore Bots
+                  Выбрать бота
                 </Button>
               </Link>
               <Link to="/dashboard">
                 <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 font-bold text-lg px-8 py-6">
                   <Icon name="UserCircle" className="mr-2 h-5 w-5" />
-                  Get Started
+                  Начать
                 </Button>
               </Link>
             </div>
@@ -80,11 +80,11 @@ const Index = () => {
         <section className="container mx-auto px-4 py-20">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-neon">
-              <span className="text-primary">CHOOSE YOUR</span>{' '}
-              <span className="text-secondary">SOLUTION</span>
+              <span className="text-primary">ВЫБЕРИТЕ</span>{' '}
+              <span className="text-secondary">РЕШЕНИЕ</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Select from our ready-made bots or build a custom solution
+              Готовые боты или кастомная разработка под ваши задачи
             </p>
           </div>
 
@@ -101,7 +101,7 @@ const Index = () => {
                       <Icon name={bot.icon} className={`h-8 w-8 text-${bot.color}`} />
                     </div>
                     <Badge variant="outline" className={`text-${bot.color} border-${bot.color}/50`}>
-                      {bot.id === 3 ? 'Custom' : 'Ready'}
+                      {bot.id === 3 ? 'Под заказ' : 'Готово'}
                     </Badge>
                   </div>
                   <CardTitle className="text-2xl text-neon">{bot.name}</CardTitle>
@@ -124,7 +124,7 @@ const Index = () => {
                     <Button 
                       className={`w-full bg-${bot.color} hover:bg-${bot.color}/80 text-${bot.color}-foreground font-semibold`}
                     >
-                      {bot.id === 3 ? 'Order Now' : 'Rent Now'}
+                      {bot.id === 3 ? 'Заказать' : 'Арендовать'}
                       <Icon name="ArrowRight" className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
@@ -138,18 +138,18 @@ const Index = () => {
           <Card className="border-accent/30 bg-gradient-to-br from-card/80 to-accent/10 backdrop-blur-sm glow-purple">
             <CardHeader className="text-center">
               <CardTitle className="text-4xl md:text-5xl font-bold text-neon">
-                <span className="text-accent">NEED SOMETHING UNIQUE?</span>
+                <span className="text-accent">НУЖНО ЧТО-ТО УНИКАЛЬНОЕ?</span>
               </CardTitle>
               <CardDescription className="text-lg text-muted-foreground mt-4">
-                We develop custom Discord bots tailored to your specific requirements
+                Мы разрабатываем кастомных Discord ботов под ваши специфические требования
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 {[
-                  { icon: 'Code2', title: 'Custom Features', desc: 'Built exactly how you want' },
-                  { icon: 'Shield', title: 'Secure & Reliable', desc: 'Enterprise-grade security' },
-                  { icon: 'Headphones', title: 'Premium Support', desc: '24/7 dedicated assistance' },
+                  { icon: 'Code2', title: 'Любые функции', desc: 'Реализуем именно то, что нужно' },
+                  { icon: 'Shield', title: 'Надёжность', desc: 'Корпоративный уровень безопасности' },
+                  { icon: 'Headphones', title: 'Премиум поддержка', desc: 'Помощь 24/7' },
                 ].map((item, idx) => (
                   <div key={idx} className="space-y-2">
                     <div className="flex justify-center">
@@ -165,7 +165,7 @@ const Index = () => {
               <Link to="/dashboard">
                 <Button size="lg" className="bg-accent hover:bg-accent/80 text-accent-foreground font-bold text-lg px-8 py-6 mt-6">
                   <Icon name="MessageSquare" className="mr-2 h-5 w-5" />
-                  Start Your Project
+                  Начать проект
                 </Button>
               </Link>
             </CardContent>
